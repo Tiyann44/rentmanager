@@ -2,8 +2,8 @@ package com.epf.rentmanager.servlet;
 
 import com.epf.rentmanager.Exception.DaoException;
 import com.epf.rentmanager.Exception.ServiceException;
-import com.epf.rentmanager.model.Vehicle;
-import com.epf.rentmanager.service.VehicleService;
+import com.epf.rentmanager.model.Client;
+import com.epf.rentmanager.service.ClientService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,26 +13,26 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/cars")
+@WebServlet("/users")
 
-public class VehicleListServlet extends HttpServlet {
+public class ClientListServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        List<Vehicle> vehicle;
-        VehicleService vehicleService = VehicleService.getInstance();
+        List<Client> client;
+        ClientService clientService = ClientService.getInstance();
 
         try{
-            vehicle = vehicleService.findAll();
+            client = clientService.findAll();
         }
         catch(ServiceException e){
             throw new ServletException();
         }
 
-        request.setAttribute("vehicles", vehicle);
+        request.setAttribute("users", client);
 
-        this.getServletContext().getRequestDispatcher("/WEB-INF/views/vehicles/list.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/WEB-INF/views/users/list.jsp").forward(request, response);
     }
 }
