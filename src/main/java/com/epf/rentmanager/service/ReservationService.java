@@ -81,6 +81,16 @@ public class ReservationService {
             throw new ServiceException();
         }
     }
+
+    public int count() throws ServiceException {
+        // TODO: créer un véhicule
+        try {
+            return ReservationDao.count();
+        }
+        catch(DaoException e) {
+            throw new ServiceException();
+        }
+    }
     private boolean isUndefined(String str){
         return (str == null && str.trim().isEmpty());
     }

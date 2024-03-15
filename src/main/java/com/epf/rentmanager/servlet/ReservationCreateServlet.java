@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 @WebServlet("/rents/create")
 public class ReservationCreateServlet extends HttpServlet {
@@ -27,7 +28,11 @@ public class ReservationCreateServlet extends HttpServlet {
             response) throws ServletException, IOException {
         ReservationService reservationService = ReservationService.getInstance();
         try{
-            reservationService.create(new Reservation(-1l, Long.parseLong(request.getParameter("client_id")), Long.parseLong(request.getParameter("vehicle_id")), LocalDate.parse(request.getParameter("debut")), LocalDate.parse(request.getParameter("fin"))));
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+            LocalDate debut = LocalDate.parse(request.getParameter("debut"), formatter);
+            LocalDate fin = LocalDate.parse(request.getParameter("fin"), formatter);
+
+            reservationService.create(new Reservation(-1l, Long.parseLong(request.getParameter("client_id")), Long.parseLong(request.getParameter("vehicle_id")), debut, fin));
         }
 
 

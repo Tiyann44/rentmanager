@@ -142,4 +142,20 @@ public class ReservationDao {
 		return reservations;
 	}
 
+	public int count() throws DaoException {
+		int i =0;
+		try {
+			Connection connection = ConnectionManager.getConnection();
+			PreparedStatement preparedStatement = connection.prepareStatement(FIND_RESERVATIONS_QUERY);
+			preparedStatement.execute();
+			ResultSet resultSet = preparedStatement.getResultSet();
+			while (resultSet.next()){
+				i++;
+			}}
+		catch (SQLException e) {
+			throw new DaoException();
+		}
+		return i;
+	}
+
 }

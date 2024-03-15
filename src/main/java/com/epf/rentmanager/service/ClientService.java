@@ -68,6 +68,16 @@ public class ClientService {
 		}
 	}
 
+	public int count() throws ServiceException {
+		// TODO: créer un véhicule
+		try {
+			return clientDao.count();
+		}
+		catch(DaoException e) {
+			throw new ServiceException();
+		}
+	}
+
 	private boolean isUndefined(String str){
 		return (str == null && str.trim().isEmpty());
 	}

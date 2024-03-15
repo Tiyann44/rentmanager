@@ -70,8 +70,20 @@ public class VehicleService {
 		}
 		return vehicules;
 	}
+
+	public int count() throws ServiceException {
+		// TODO: créer un véhicule
+		try {
+			return vehicleDao.count();
+		}
+		catch(DaoException e) {
+			throw new ServiceException();
+		}
+	}
+
 	private boolean isUndefined(String str){
 		return (str == null && str.trim().isEmpty());
 	}
-	
+
+
 }

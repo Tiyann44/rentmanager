@@ -6,26 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="72a84573-b7b5-424f-aed9-f9188f7a2a3c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/servlet/VehicleListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/servlet/VehicleListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/rents/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/rents/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/rents/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/rents/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/vehicles/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/vehicles/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/Exception/DaoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/Exception/DaoException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/Exception/ServiceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/Exception/ServiceException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/model/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/model/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/model/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/persistence/ConnectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/persistence/ConnectionManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/service/VehicleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/service/VehicleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/servlet/HomeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/servlet/HomeServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/servlet/VehicleCreateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/servlet/VehicleCreateServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/servlet/VehicleListServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/servlet/VehicleListServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/utils/IOUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epf/rentmanager/utils/IOUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/rentmanager/org/apache/jsp/WEB_002dINF/views/vehicles/list_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/rentmanager/org/apache/jsp/WEB_002dINF/views/vehicles/list_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/rentmanager/org/apache/jsp/WEB_002dINF/views/vehicles/list_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/rentmanager/org/apache/jsp/WEB_002dINF/views/vehicles/list_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/dao/ClientDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/dao/ReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/dao/ReservationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/service/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/service/ReservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/service/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/service/VehicleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/servlet/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/servlet/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/servlet/ReservationCreateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epf/rentmanager/servlet/ReservationCreateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
